@@ -1,0 +1,22 @@
+{
+	"manifest_version": 3,
+	"name": "Auto Pin Tabs",
+	"version": "1.0",
+	"description": "Automatically pins tabs with specific domains, fetched dynamically from a 'Startup' folder in Chrome bookmarks. Ideal for organizing essential websites and enhancing browsing productivity.",
+	"permissions": [
+		"storage",
+		"bookmarks",
+		"tabs"
+	],
+	"icons": {
+		"16": "icon16.png",
+		"48": "icon48.png",
+		"128": "icon128.png"
+	},
+	"action": {
+		"default_icon": "icon128.png"
+	},
+	"background": {
+		"service_worker": "background.js"
+	}
+}
